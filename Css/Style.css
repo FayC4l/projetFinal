@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=La+Belle+Aurore&family=Yellowtail&display=swap');
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(25, 2em); /* 25 colonnes */
+    grid-template-rows: repeat(15, 2em); /* 15 lignes */
+    grid-gap: 0px; /* Espace entre les cellules de la grille */
+    margin: 2.3% 5%;
+   
+}
+
+.grid-item {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0px;
+    border: 0px solid white;
+    
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+}
+
+#panneau-control
+{
+    border: #6a00ff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgb(78, 78, 78);
+}
+
+#panneau-control div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 25px;
+}
+
+#panneau-control button
+{
+    height: 2em;
+    width: 6em;
+    font-weight: 600;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    border-radius : 10px;
+}
+
+
+#panneau-control button:hover
+{
+    width: 5.5em;
+    height: 2.5em;
+    border: 1px solid rgb(2, 134, 51);
+}
+
+#panneau-control button:focus
+{
+    background-color: green;
+    color: white;
+}
+
+#panneau-control .laterale #Left
+{
+    margin-right: 100px;
+}
+
+#Reinitialiser
+{
+    background-color: rgb(248, 225, 225);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    width: 2em;
+    border: none;
+    box-shadow: 2px 2px 8px white;
+    border-radius : 10px;
+    
+}
+
+#score
+{
+    display: block;
+    font-size: 2em;
+    font-weight: 900;
+    color: rgb(115, 0, 255);
+    font-family: 'Great Vibes', cursive;
+}
+
+#gameOver
+{
+    display: none;
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    margin-left: 25%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(115, 0, 255);
+    padding: 1.5em;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 0.1em 2em rgb(46, 46, 46);
+}
+
+#gameOver h1 
+{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(17, 17, 191);
+    margin-bottom: 2.5em;
+}
+
+.centre{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#Button-rejouer 
+{
+    display: block;
+    background-color: rgb(0, 199, 0);
+    font-family: cursive;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+#Button-rejouer:hover
+{
+    background-color: green;
+}
+
+#Button-quitter 
+{
+    display: block;
+    background-color: rgb(212, 0, 0);
+    font-family: cursive;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+#Button-quitter:hover
+{
+    background-color: red;
+}
+
+nav
+{
+    display: flex;
+    background-color: #6c03ff;
+    padding: 1em 0 0.5em 1em;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+	text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* list */
+li
+{
+    list-style: none;
+    margin: 0 2.7em;
+    width: 5em;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 1em;
+    
+}
+
+#nav-Up
+{
+    display: flex; 
+    /* pour aligner */
+    justify-content: center;
+    /* mettre le text au milieu */
+}

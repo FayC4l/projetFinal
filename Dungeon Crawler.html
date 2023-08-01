@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./Css/Reset.css"> -->
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="./Js/JavaScript.js" defer></script>
+    <title>Dungeon Crawler</title>
+</head>
+<body>
+    <header>
+        <!-- titre -->
+        <nav id="nav-Up">
+            <a href="Index.html" style="color: white;"><h1>Dungeon Crawler</h1></a>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container" id="gridContainer"></div>
+        <!-- panneau de controle du jeu -->
+        <div id="panneau-control">
+            <div id="score"> 
+                <p>Panel de controle</p>
+            </div>
+            <div>
+                <Button id="Up"> haut  </Button>
+            </div>
+            <div class="laterale">
+                <Button id = "Left"> gauche  </Button>
+                <Button id="Right"> droite  </Button>
+            </div>
+            
+            <div>
+                <Button id="Down"> bas  </Button>
+            </div>
+            <br>
+            <div>
+                <Button id="Reinitialiser"><span class="sp2">Réinitialiser</span></Button>
+            </div>
+            <!-- affichage du score et du temps  -->
+            <div>
+                <li><span class="sp1" >Score</span><span class="sp2" id="affichage-score">0</span></li>
+                <br>
+                <li><span class="sp1">Time</span><span class="sp2" id="time">0</span></li>
+            </div>
+        </div>
+        <!-- un popup qui va apparaitre au cas ou vous avez perdu -->
+        <div id="gameOver">
+            <h1>Game Over</h1>
+            <div class="centre">
+                <button id="Button-rejouer">Replay :-)</button>
+                <button id="Button-quitter">Quit :-(</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
